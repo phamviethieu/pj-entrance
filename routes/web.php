@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/',function(){
+    return view('index');
+});
+
+Route::get('/dang-ki',function(){
+    return view('view.signup');
+});
+Route::get('/tin',function(){
+    return view('view.new');
+});
+Route::get('/admin', function(){
+    return view('view.admin');
 });
