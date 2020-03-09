@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/aa316daba8.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <title>Home page</title>
+</head>
+
+<body>
+    <div class="blend"></div>
+    <!-- <div class="item-modal">
+  	                <div class="modal-content"> 
+  	                    <div class="close-modal">x</div>
+  	                    <form>
+  						  <div class="form-group">
+  						    <label for="exampleInputEmail1">Email address</label>
+  						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  						    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  						  </div>
+  						  <div class="form-group">
+  						    <label for="exampleInputPassword1">Password</label>
+  						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  						  </div>
+  						  <div class="form-check">
+  						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  						    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  						  </div>
+  						  <button type="submit" class="btn btn-primary">Submit</button>
+  						</form>
+  	                </div> 
+  	    </div> -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="item-modal">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            Chưa có tài khoản: <a href="">Đăng ký.</a>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="header">
+        <div class="jumbotron banner pt-3 pb-3 " style="margin-bottom: 0px;">
+            <div class="container jumbotron-content">
+                <div class="row pl-2 pr-2">
+                    <div class="col-12 col-md-6 col-sm-6 text-left">
+                        <b>KHOA ĐIỆN TỬ THÔNG TIN </b>
+                        <br> TRƯỜNG ĐẠI HỌC MỞ HÀ NỘI
+                    </div>
+                    <div class="col-12 col-md-6 col-sm-6 text-right">
+                        <a href="#"><i class="fab fa-facebook-square"></i> </a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end-header -->
+    <div class="body-content">
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top navbarTop">
+            <div class="container navbar-pd">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapse_target" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-between" id="collapse_target">
+                    <a class="navbar-brand" href=""><img src="../img/logokhoa.jpg" width="50px"></a>
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ĐẠI HỌC</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SAU ĐẠI HỌC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">E-LEARNING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HỎI ĐÁP</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-nav">
+                    <button type="button" class="btn btn-success btn-login" data-toggle="modal" data-target="#myModal">Đăng nhập</button>
+                </div>
+
+            </div>
+        </nav>
+        <div class="container-fluid banner-top text-center">
+
+            <a href="index.html">Trang chủ </a>/ Đại học
+
+
+        </div>
+
+        <!--wrapper-->
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-md-9 col-sm-9 l-content">
+                    <h2 class="main-title">ĐĂNG KÝ TƯ VẤN <br>
+                        <img src="../img/line.png" width="150px" /></h2>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="số nhà/thôn/ấp">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="số nhà/thôn/ấp">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+
+                </div>
+                <!--side bar-->
+                <div class="col-md-3 col-sm-3">
+                    <aside class="sb-list">
+
+                        <h3 class="sb-title">DANH MỤC</h3>
+                        <ul>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </aside>
+                    <aside class="sb-banner">
+                        <a href=""><img src="../img/dtvt.jpg" width="100%" height="150px" /></a>
+                        <a href=""><img src="../img/dtvt.jpg" width="100%" height="150px" /></a>
+                        <a href=""><img src="../img/dtvt.jpg" width="100%" height="150px" /></a>
+
+                    </aside>
+                    <aside class="sb-list">
+
+                        <h3 class="sb-title">POPULAR VIEWS</h3>
+                        HELLLO
+                    </aside>
+                </div>
+                <!--end sidebar-->
+
+
+
+            </div>
+
+        </div>
+
+        <!--end wrapper-->
+
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+
+                    <div class="row pt-5 pb-5 mb-3 ">
+                        <div class="col-12 col-sm-6 col-md-6 form-group" align="center">
+
+                            <a href=""><img src="../img/logokhoa.jpg" width="150px" height="auto" style="border-radius: 50%;"></a>
+
+                        </div>
+                        <div class="col-4 col-sm-2 col-md-2">
+                            <h5 class="text-uppercase">Đại học</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Điện tử - Viễn thông</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Công nghệ thông tin</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Điều khiển - Tự đông hóa</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Liên thông</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4 col-sm-2 col-md-2">
+                            <h5 class="text-uppercase">Sau đại học</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4 col-sm-2 col-md-2">
+                            <h5 class="text-uppercase">Links</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end-row -->
+                    <!-- <div class="row justify-content-center mt-5 mb-5">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search Something" aria-label="Search Something" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">SEARCH</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- end-row -->
+                </div>
+
+            </div>
+            <div class="footer-copyright fixed-bottom text-center py-3">
+                <div class="container">
+                    <div class="col-md-6 float-left">
+                        KHOA CÔNG NGHỆ ĐIỆN TỬ - THÔNG TIN
+                    </div>
+                    <i class="fas fa-phone-alt"></i> (+84) 038 465 9555
+                    <!-- Design and Developement -->
+                </div>
+            </div>
+
+        </footer>
+        <!-- end-footer -->
+        <!--msg fixed bottom-->
+        <div class="fixed-bottom text-left pl-5 pb-3 msg-icon">
+            <a href=""><img src="../img/ms.png" width="50px" /></a>
+
+        </div>
+        <!--end msg...-->
+        <div class="back-to-top ">
+            <a href="#"><img src="../img/scroll-to-top.png" width="80px" /></a>
+        </div>
+        <script type="text/javascript" src="../js/scroll.js"></script>
+        <script type="text/javascript" src="../js/login.js"></script>
+        <script type="text/javascript" src="../js/load.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
